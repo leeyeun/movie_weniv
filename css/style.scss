@@ -56,26 +56,56 @@
             border: 1px solid #BDBDBD;
             box-sizing: border-box;
             border-radius: 10px;
-            padding: 0 19px;
-            img{
-                margin-top: 19px;
-                width: 180px;
-                border-radius: 10px;
-                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            overflow: hidden;
+            .movie-detail{
+                padding: 0 20px;
+                img{
+                    margin-top: 19px;
+                    width: 180px;
+                    border-radius: 10px;
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                }
+                .movie-title{
+                    font-size: 16px;
+                    margin: 11px 0 12px;
+                    font-weight: 900;
+                }
+                dl{
+                    font-size: 13px;
+                    display: flex;
+                    line-height: 2rem;
+                    dt{
+                        color: #828282;
+                        padding-right: 5px;
+                        flex-shrink: 0;
+                    }
+                }
             }
-            .movie-title{
-                font-size: 16px;
-                margin: 11px 0 12px;
-                font-weight: 900;
-            }
-            dl{
-                font-size: 13px;
+            
+            .btn-cont{
                 display: flex;
-                line-height: 2rem;
-                dt{
-                    color: #828282;
-                    padding-right: 5px;
-                    flex-shrink: 0;
+                overflow: hidden;
+                .movie-btn{
+                    font-size: 14px;
+                    width: 100%;
+                    padding: 9px 25px 12px;
+                    font-weight: 500;
+                    background-color: #F2F2F2;
+                    // border: #BDBDBD 1px solid;
+                    border: none;
+                    border-top: 1px solid #BDBDBD;
+                    &.trailer{
+                        border-left: 1px solid #BDBDBD;
+                        &::after {
+                            display: block;
+                            content: '';
+                            background-image: url(/images/아이콘_재생.png);
+                            width: 16px;
+                            height: 16px;
+    
+                        }
+                    }
+                    
                 }
             }
         }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
 .app {
   background-color: #fff;
@@ -71,10 +72,14 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 10px;
-  padding: 0 19px;
+  overflow: hidden;
 }
 
-.main .movie-list li img {
+.main .movie-list li .movie-detail {
+  padding: 0 20px;
+}
+
+.main .movie-list li .movie-detail img {
   margin-top: 19px;
   width: 180px;
   border-radius: 10px;
@@ -82,13 +87,13 @@
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.main .movie-list li .movie-title {
+.main .movie-list li .movie-detail .movie-title {
   font-size: 16px;
   margin: 11px 0 12px;
   font-weight: 900;
 }
 
-.main .movie-list li dl {
+.main .movie-list li .movie-detail dl {
   font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,10 +101,39 @@
   line-height: 2rem;
 }
 
-.main .movie-list li dl dt {
+.main .movie-list li .movie-detail dl dt {
   color: #828282;
   padding-right: 5px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.main .movie-list li .btn-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.main .movie-list li .btn-cont .movie-btn {
+  font-size: 14px;
+  width: 100%;
+  padding: 9px 25px 12px;
+  font-weight: 500;
+  background-color: #F2F2F2;
+  border: none;
+  border-top: 1px solid #BDBDBD;
+}
+
+.main .movie-list li .btn-cont .movie-btn.trailer {
+  border-left: 1px solid #BDBDBD;
+}
+
+.main .movie-list li .btn-cont .movie-btn.trailer::after {
+  display: block;
+  content: '';
+  background-image: url(/images/아이콘_재생.png);
+  width: 16px;
+  height: 16px;
 }
 /*# sourceMappingURL=style.css.map */
