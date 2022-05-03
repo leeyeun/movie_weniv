@@ -5,6 +5,10 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main {
   width: 1060px;
   margin: 90px auto;
@@ -26,7 +30,7 @@
   content: '';
   display: block;
   width: 650px;
-  height: 2   px;
+  height: 2px;
   background-color: #BDBDBD;
   margin: 35px auto;
 }
@@ -59,12 +63,14 @@
   background-color: #fff;
   border-radius: 15px;
   border: 2px solid #BDBDBD;
-  margin: 27px 27px 30px 28px;
+  margin: 27px 26px 30px 27px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 26px 27px 30px 27px;
-  gap: 23px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 26px 25px 30px;
+  gap: 20px;
 }
 
 .main .movie-list li {
@@ -85,6 +91,7 @@
   border-radius: 10px;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  height: 250px;
 }
 
 .main .movie-list li .movie-detail .movie-title {
@@ -95,17 +102,26 @@
 
 .main .movie-list li .movie-detail dl {
   font-size: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  line-height: 2rem;
+  line-height: 1.6rem;
+  margin-bottom: 18px;
 }
 
 .main .movie-list li .movie-detail dl dt {
   color: #828282;
   padding-right: 5px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  float: left;
+}
+
+.main .movie-list li .movie-detail dl dd:nth-child(4)::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(/images/별점이미지.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: -2px;
+  margin-right: 3px;
 }
 
 .main .movie-list li .btn-cont {
@@ -118,7 +134,7 @@
 .main .movie-list li .btn-cont .movie-btn {
   font-size: 14px;
   width: 100%;
-  padding: 9px 25px 12px;
+  padding: 9px 24px 12px;
   font-weight: 500;
   background-color: #F2F2F2;
   border: none;
@@ -129,11 +145,89 @@
   border-left: 1px solid #BDBDBD;
 }
 
-.main .movie-list li .btn-cont .movie-btn.trailer::after {
-  display: block;
+.main .movie-list li .btn-cont .movie-btn.trailer::before {
+  display: inline-block;
   content: '';
   background-image: url(/images/아이콘_재생.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 16px;
   height: 16px;
+  margin-right: 2px;
+  vertical-align: -3px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #F2F2F2;
+}
+
+.footer .cont-foot {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.footer .cont-foot .foot-hea .foot-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 53px 0px 42px;
+  display: inline-block;
+}
+
+.footer .cont-foot .foot-hea .foot-icon {
+  float: right;
+  margin: 53px 0px 42px;
+}
+
+.footer .cont-foot .foot-hea .foot-icon img {
+  width: 22px;
+  padding-left: 20px;
+}
+
+.footer .cont-foot .foot-hea .foot-icon img:nth-last-child(1) {
+  margin-right: 10px;
+}
+
+.footer .cont-foot .foot-hea::after {
+  content: '';
+  display: block;
+  width: 1189px;
+  height: 2px;
+  background-color: #C4C4C4;
+}
+
+.footer .cont-foot .foot-dl {
+  margin: 36px 0;
+  overflow: hidden;
+}
+
+.footer .cont-foot .foot-dl dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .cont-foot .foot-dl dl dt {
+  font-weight: 700;
+  padding-right: 4px;
+}
+
+.footer .cont-foot .foot-dl dl dt:nth-child(2):before,
+.footer .cont-foot .foot-dl dl dt:nth-child(4):before,
+.footer .cont-foot .foot-dl dl dd:nth-child(5)::after,
+.footer .cont-foot .foot-dl dl dd:nth-child(6)::after {
+  content: '|';
+  display: inline-block;
+  padding: 0px 7px;
+}
+
+.footer .cont-foot .foot-dl .copy-right {
+  float: right;
+  margin-top: -16px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

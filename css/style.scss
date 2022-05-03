@@ -5,6 +5,10 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 @mixin movie-title {
     
 }
@@ -24,7 +28,7 @@
             content: '';
             display: block;
             width: 650px;
-            height: 2   px;
+            height: 2px;
             background-color: #BDBDBD;
             margin: 35px auto;
         }
@@ -48,10 +52,11 @@
         background-color: #fff;
         border-radius: 15px;
         border: 2px solid #BDBDBD;
-        margin: 27px 27px 30px 28px;
+        margin: 27px 26px 30px 27px;
         display: flex;
-        padding: 26px 27px 30px 27px;
-        gap: 23px;
+        flex-wrap: wrap;
+        padding: 26px 25px 30px;
+        gap: 20px;
         li{
             border: 1px solid #BDBDBD;
             box-sizing: border-box;
@@ -64,7 +69,9 @@
                     width: 180px;
                     border-radius: 10px;
                     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    height: 250px;
                 }
+
                 .movie-title{
                     font-size: 16px;
                     margin: 11px 0 12px;
@@ -72,14 +79,28 @@
                 }
                 dl{
                     font-size: 13px;
-                    display: flex;
-                    line-height: 2rem;
+                    // display: flex;
+                    line-height: 1.6rem;
+                    margin-bottom: 18px;
                     dt{
                         color: #828282;
                         padding-right: 5px;
-                        flex-shrink: 0;
+                        float: left;
                     }
+                    dd:nth-child(4)::before{
+                        content: '';
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        background-image: url(/images/별점이미지.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        vertical-align: -2px;
+                        margin-right: 3px;
+                    }
+                    
                 }
+                
             }
             
             .btn-cont{
@@ -88,7 +109,7 @@
                 .movie-btn{
                     font-size: 14px;
                     width: 100%;
-                    padding: 9px 25px 12px;
+                    padding: 9px 24px 12px;
                     font-weight: 500;
                     background-color: #F2F2F2;
                     // border: #BDBDBD 1px solid;
@@ -96,12 +117,17 @@
                     border-top: 1px solid #BDBDBD;
                     &.trailer{
                         border-left: 1px solid #BDBDBD;
-                        &::after {
-                            display: block;
+                        &::before {
+                            display: inline-block;
                             content: '';
                             background-image: url(/images/아이콘_재생.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
                             width: 16px;
                             height: 16px;
+                            margin-right: 2px;
+                            vertical-align: -3px;
     
                         }
                     }
@@ -112,3 +138,67 @@
     }
 }
 
+.footer{
+    width: 100%;
+    background-color: #F2F2F2;
+    .cont-foot{
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        .foot-hea{
+            .foot-title{
+                font-size: 22px;
+                font-weight: 700;
+                margin: 53px 0px 42px;
+                display: inline-block;
+                
+            }
+            .foot-icon{
+                float: right;
+                margin: 53px 0px 42px;
+                img{
+                    width: 22px;
+                    padding-left: 20px;
+                    &:nth-last-child(1){
+                        margin-right: 10px;
+                    }
+                }
+            }
+            &::after{
+                content: '';
+                display: block;
+                width: 1189px;
+                height: 2px;
+                background-color: #C4C4C4;
+                
+            }
+        }
+        
+        .foot-dl{
+            margin: 36px 0;
+            overflow: hidden;
+            dl{
+                display: flex;
+                dt{
+                    font-weight: 700;
+                    padding-right: 4px;
+                }
+                dt:nth-child(2):before,
+                dt:nth-child(4):before,
+                dd:nth-child(5)::after,
+                dd:nth-child(6)::after{
+                    content: '|';
+                    display: inline-block;
+                    padding: 0px 7px;
+                }
+            }
+            .copy-right{
+                float: right;
+                margin-top: -16px;
+                font-size: 14px;
+                font-weight: 700;
+                margin-right: 10px;
+            }
+        }
+    }
+}
