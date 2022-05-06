@@ -77,25 +77,36 @@ a{
                     margin: 11px 0 12px;
                     font-weight: 900;
                 }
-                dl{
+                .list-info{
                     font-size: 13px;
                     // display: flex;
                     line-height: 1.6rem;
                     margin-bottom: 18px;
+                    // overflow: hidden;
+                    .item-star{
+                        float: right;
+                        margin-top: -27px;
+                        // margin-right: px;
+                        dd{
+                            float: right;
+                        }
+                    }
                     dt{
+                        display: inline-block;
                         color: #828282;
                         padding-right: 5px;
                         float: left;
                     }
-                    dd:nth-child(4)::before{
+                    dd:nth-child(4)::before,
+                    .item-star::before{
                         content: '';
                         display: inline-block;
                         width: 16px;
                         height: 16px;
-                        background-image: url(./images/star.png);
+                        background-image: url(/images/star.png);
                         background-repeat: no-repeat;
                         background-position: center;
-                        vertical-align: -2px;
+                        vertical-align: -3px;
                         margin-right: 3px;
                     }
                     

@@ -99,19 +99,30 @@ a {
   font-weight: 900;
 }
 
-.main .movie-list li .movie-detail dl {
+.main .movie-list li .movie-detail .list-info {
   font-size: 13px;
   line-height: 1.6rem;
   margin-bottom: 18px;
 }
 
-.main .movie-list li .movie-detail dl dt {
+.main .movie-list li .movie-detail .list-info .item-star {
+  float: right;
+  margin-top: -27px;
+}
+
+.main .movie-list li .movie-detail .list-info .item-star dd {
+  float: right;
+}
+
+.main .movie-list li .movie-detail .list-info dt {
+  display: inline-block;
   color: #828282;
   padding-right: 5px;
   float: left;
 }
 
-.main .movie-list li .movie-detail dl dd:nth-child(4)::before {
+.main .movie-list li .movie-detail .list-info dd:nth-child(4)::before,
+.main .movie-list li .movie-detail .list-info .item-star::before {
   content: '';
   display: inline-block;
   width: 16px;
@@ -119,7 +130,7 @@ a {
   background-image: url(/images/star.png);
   background-repeat: no-repeat;
   background-position: center;
-  vertical-align: -2px;
+  vertical-align: -3px;
   margin-right: 3px;
 }
 
@@ -147,7 +158,7 @@ a {
 .main .movie-list li .btn-cont .movie-btn.trailer::before {
   display: inline-block;
   content: '';
-  background-image: url(/images/icon.png);
+  background-image: url(./images/icon.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

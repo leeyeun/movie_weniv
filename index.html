@@ -10,38 +10,40 @@
 </head>
 <body>
     <div class="app">
-        <div class="main">
+        <section class="main">
             <h1 class="txt-h1">정글 시네마 영화 목록</h1>
-            <div class="cont-menu">
+            <nav class="cont-menu">
                 <a href="#" class="btn-menu now">현재상영영화</a>
                 <a href="#" class="btn-menu">개봉예정영화</a>
                 <a href="#" class="btn-menu">박스오피스</a>
-            </div>
+            </nav>
             
             <ul class="movie-list">
                 <li>
-                    <div class="movie-detail">
+                    <article class="movie-detail">
                         <img src="images/poster_wenivworld.png" alt="">
                         <h2 class="movie-title">위니브 월드 : 새로운 시대</h2>
-                        <dl>
-                            <dt>개요</dt>
-                            <dd>판타지</dd>
-                            <dt>평점</dt>
-                            <dd>9.05</dd>
-                            <dt>개봉</dt>
-                            <dd>2021.03.27</dd>
-                            <dt>출연</dt>
-                            <dd>라이캣, 소울곰, 개리씨</dd>
+                        <dl class="list-info">
+                            <div>
+                                <dt>개요</dt>
+                                <dd>판타지</dd>
+                            </div>
+                            <div class="item-star">
+                                <dt>평점</dt>
+                                <dd>9.05</dd>
+                            </div>
+                            <div>
+                                <dt>개봉</dt>
+                                <dd>2021.03.27</dd>
+                            </div>
+                            <div>
+                                <dt>출연</dt>
+                                <dd>라이캣, 소울곰, 개리씨</dd>
+                            </div>
+                            
+                            
                         </dl>
-                        <!-- <dl>
-                            <dt>개봉</dt>
-                            <dd>2021.03.27</dd>
-                        </dl>
-                        <dl>
-                            <dt>출연</dt>
-                            <dd>라이캣, 소울곰, 개리씨</dd>
-                        </dl> -->
-                    </div>
+                    </article>
                     <div class="btn-cont">
                         <button type="button" class="movie-btn Ticketing">예매하기</button>
                         <button type="button" class="movie-btn trailer">예고편</button>
@@ -51,15 +53,23 @@
                     <div class="movie-detail">
                         <img src="images/poster_java.png" alt="">
                         <h2 class="movie-title">눈떠보니 코딩테스트 전...</h2>
-                        <dl>
-                            <dt>개요</dt>
-                            <dd>스릴러</dd>
-                            <dt>평점</dt>
-                            <dd>8.25</dd>
-                            <dt>개봉</dt>
-                            <dd>2021.04.01</dd>
-                            <dt>출연</dt>
-                            <dd>자바독, 개리씨, 빙키</dd>
+                        <dl class="list-info">
+                            <div>
+                                <dt>개요</dt>
+                                <dd>스릴러</dd>
+                            </div>
+                            <div class="item-star">
+                                <dt>평점</dt>
+                                <dd>8.25</dd>
+                            </div>
+                            <div>
+                                <dt>개봉</dt>
+                                <dd>2021.04.01</dd>
+                            </div>
+                            <div>
+                                <dt>출연</dt>
+                                <dd>자바독, 개리씨, 빙키</dd>
+                            </div>
                         </dl>
                     </div>
                     <div class="btn-cont">
@@ -71,15 +81,23 @@
                     <div class="movie-detail">
                         <img src="images/poster_bootcamp.jpg" alt="">
                         <h2 class="movie-title">파이썬 부트캠프</h2>
-                        <dl>
-                            <dt>개요</dt>
-                            <dd>드라마</dd>
-                            <dt>평점</dt>
-                            <dd>8.77</dd>
-                            <dt>개봉</dt>
-                            <dd>2021.04.12</dd>
-                            <dt>출연</dt>
-                            <dd>캣, 파이, 썬, 뮤라</dd>
+                        <dl class="list-info">
+                            <div>
+                                <dt>개요</dt>
+                                <dd>드라마</dd>
+                            </div>
+                            <div class="item-star">
+                                <dt>평점</dt>
+                                <dd>8.77</dd>
+                            </div>
+                            <div>
+                                <dt>개봉</dt>
+                                <dd>2021.04.12</dd>
+                            </div>
+                            <div>
+                                <dt>출연</dt>
+                                <dd>캣, 파이, 썬, 뮤라</dd>
+                            </div>
                         </dl>
                     </div>
                     <div class="btn-cont">
@@ -91,15 +109,23 @@
                     <div class="movie-detail">
                         <img src="images/poster_pyqt.png"">
                         <h2 class="movie-title">파이큐티의 사랑</h2>
-                        <dl>
-                            <dt>개요</dt>
-                            <dd>로맨스</dd>
-                            <dt>평점</dt>
-                            <dd>8.81</dd>
-                            <dt>개봉</dt>
-                            <dd>2021.04.08</dd>
-                            <dt>출연</dt>
-                            <dd>파이썬, 큐티</dd>
+                        <dl class="list-info">
+                            <div>
+                                <dt>개요</dt>
+                                <dd>로맨스</dd>
+                            </div>
+                            <div class="item-star">
+                                <dt>평점</dt>
+                                <dd>8.81</dd>
+                            </div>
+                            <div>
+                                <dt>개봉</dt>
+                                <dd>2021.04.08</dd>
+                            </div>
+                            <div>
+                                <dt>출연</dt>
+                                <dd>파이썬, 큐티</dd>
+                            </div>
                         </dl>
                     </div>
                     <div class="btn-cont">
@@ -111,15 +137,23 @@
                     <div class="movie-detail">
                         <img src="images/poster_nginx.png" alt="">
                         <h2 class="movie-title">NGINX의 춤</h2>
-                        <dl>
-                            <dt>개요</dt>
-                            <dd>드라마</dd>
-                            <dt>평점</dt>
-                            <dd>9.88</dd>
-                            <dt>개봉</dt>
-                            <dd>2021.04.15</dd>
-                            <dt>출연</dt>
-                            <dd>NGINX, 노션</dd>
+                        <dl class="list-info">
+                            <div>
+                                <dt>개요</dt>
+                                <dd>드라마</dd>
+                            </div>
+                            <div class="item-star">
+                                <dt>평점</dt>
+                                <dd>9.88</dd>
+                            </div>
+                            <div>
+                                <dt>개봉</dt>
+                                <dd>2021.04.15</dd>
+                            </div>
+                            <div>
+                                <dt>출연</dt>
+                                <dd>NGINX, 노션</dd>
+                            </div>
                         </dl>
                     </div>
                     <div class="btn-cont">
@@ -131,15 +165,23 @@
                     <div class="movie-detail">
                         <img src="images/poster_mitup.png" alt="">
                         <h2 class="movie-title">어쩌다 밋업</h2>
-                        <dl>
-                            <dt>개요</dt>
-                            <dd>드라마</dd>
-                            <dt>평점</dt>
-                            <dd>9.25</dd>
-                            <dt>개봉</dt>
-                            <dd>2021.04.17</dd>
-                            <dt>출연</dt>
-                            <dd>라이캣, 자바독, 소울곰</dd>
+                        <dl class="list-info">
+                            <div>
+                                <dt>개요</dt>
+                                <dd>드라마</dd>
+                            </div>
+                            <div class="item-star">
+                                <dt>평점</dt>
+                                <dd>9.25</dd>
+                            </div>
+                            <div>
+                                <dt>개봉</dt>
+                                <dd>2021.04.17</dd>
+                            </div>
+                            <div>
+                                <dt>출연</dt>
+                                <dd>라이캣, 자바독, 소울곰</dd>
+                            </div>
                         </dl>
                     </div>
                     <div class="btn-cont">
@@ -151,15 +193,23 @@
                     <div class="movie-detail">
                         <img src="images/poster_pygame.jpg" alt="">
                         <h2 class="movie-title">파이게임 어드벤처</h2>
-                        <dl>
-                            <dt>개요</dt>
-                            <dd>판타지액션</dd>
-                            <dt>평점</dt>
-                            <dd>8.56</dd>
-                            <dt>개봉</dt>
-                            <dd>2021.04.05</dd>
-                            <dt>출연</dt>
-                            <dd>개리씨, 파이썬</dd>
+                        <dl class="list-info">
+                            <div>
+                                <dt>개요</dt>
+                                <dd>판타지액션</dd>
+                            </div>
+                            <div class="item-star">
+                                <dt>평점</dt>
+                                <dd>8.56</dd>
+                            </div>
+                            <div>
+                                <dt>개봉</dt>
+                                <dd>2021.04.05</dd>
+                            </div>
+                            <div>
+                                <dt>출연</dt>
+                                <dd>개리씨, 파이썬</dd>
+                            </div>
                         </dl>
                     </div>
                     <div class="btn-cont">
@@ -171,15 +221,23 @@
                     <div class="movie-detail">
                         <img src="images/poster_MBIT.png" alt="">
                         <h2 class="movie-title">MBIT는 내 운명</h2>
-                        <dl>
-                            <dt>개요</dt>
-                            <dd>로맨스</dd>
-                            <dt>평점</dt>
-                            <dd>9.02</dd>
-                            <dt>개봉</dt>
-                            <dd>2021.04.12</dd>
-                            <dt>출연</dt>
-                            <dd>라이캣, 개리씨, 자바독</dd>
+                        <dl class="list-info">
+                            <div>
+                                <dt>개요</dt>
+                                <dd>로맨스</dd>
+                            </div>
+                            <div class="item-star">
+                                <dt>평점</dt>
+                                <dd>9.02</dd>
+                            </div>
+                            <div>
+                                <dt>개봉</dt>
+                                <dd>2021.04.12</dd>
+                            </div>
+                            <div>
+                                <dt>출연</dt>
+                                <dd>라이캣, 개리씨, 자바독</dd>
+                            </div>
                         </dl>
                     </div>
                     <div class="btn-cont">
